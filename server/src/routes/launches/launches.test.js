@@ -1,7 +1,14 @@
+const request = require('supertest');
+const app = require('../../app');
+
+
 describe('Test GET /launches', () => {
-    test('should respond with 200 success',() =>{
-        const response = 200;
-        expect(response).toBe(200);
+    test('should respond with 200 success',async () =>{
+        const response = await request(app)
+        .get('/launches')
+        .expect('Content-Type', /json/)
+        .expect(200);
+        
     })
 });
 
