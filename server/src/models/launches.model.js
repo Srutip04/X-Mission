@@ -1,6 +1,6 @@
 const launches = new Map();
 
-const latestFlightNumber = 100;
+let latestFlightNumber = 100;
 
 const launch = {
   flightNumber: 100,
