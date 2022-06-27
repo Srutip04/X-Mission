@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Srutip04/Nasa_Mission_Control/issues"
   },
-  "homepage": "https://github.com/Srutip04/Nasa_Mission_Control#readme"
+  "homepage": "https://github.com/Srutip04/Nasa_Mission_Control#readme",
+  "dependencies": {
+    "morgan": "^1.10.0"
+  }
 }
