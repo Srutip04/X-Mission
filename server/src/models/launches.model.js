@@ -45,7 +45,7 @@ async function saveLaunch(launch){
     throw new Error(`Planet ${launch.target} not found`);
   }
 
-  await launchesDatabase.updateOne({
+  await launchesDatabase.findOneAndUpdate({
     flightNumber: launch.flightNumber,
   },launch,{upsert: true});
 }
